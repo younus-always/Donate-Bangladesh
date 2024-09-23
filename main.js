@@ -1,3 +1,4 @@
+// Reusable function...
 function targetId(id) {
   return document.getElementById(id);
 }
@@ -88,27 +89,27 @@ targetId("donate-btn3").addEventListener("click", function () {
 targetId("donate-field").addEventListener("input", function (e) {
   const inputEvent = e.target.value;
   if (isNaN(inputEvent) || inputEvent <= 0) {
-    targetId('error').classList.remove('hidden');
-  }else {
-     targetId('error').classList.add('hidden');
+    targetId("error").classList.remove("hidden");
+  } else {
+    targetId("error").classList.add("hidden");
   }
 });
 
 targetId("donate-field2").addEventListener("input", function (e) {
   const inputEvent = e.target.value;
   if (isNaN(inputEvent) || inputEvent <= 0) {
-    targetId('error-2').classList.remove('hidden');
-  }else {
-     targetId('error-2').classList.add('hidden');
+    targetId("error-2").classList.remove("hidden");
+  } else {
+    targetId("error-2").classList.add("hidden");
   }
 });
 
 targetId("donate-field3").addEventListener("input", function (e) {
   const inputEvent = e.target.value;
   if (isNaN(inputEvent) || inputEvent <= 0) {
-    targetId('error-3').classList.remove('hidden');
-  }else {
-     targetId('error-3').classList.add('hidden');
+    targetId("error-3").classList.remove("hidden");
+  } else {
+    targetId("error-3").classList.add("hidden");
   }
 });
 

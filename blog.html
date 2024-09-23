@@ -20,52 +20,87 @@
   </head>
   <body class="font-[Poppins]">
     <header class="backdrop-filter backdrop-blur-lg sticky top-0 z-50">
-        <nav class="bg-yellow-50 py-7">
-          <div
-            class="w-11/12 mx-auto lg:w-10/12 flex items-center justify-between"
+      <nav class="bg-yellow-50 py-7">
+        <div
+          class="w-11/12 mx-auto lg:w-10/12 flex items-center justify-between"
+        >
+          <a
+            href="./blog.html"
+            class="py-2 px-5 rounded-lg text-lg bg-lime-400 hover:bg-lime-300 transition-colors font-semibold"
+            >Blog</a
           >
-            <a
-              href="./blog.html"
-              class="py-2 px-5 rounded-lg text-lg bg-lime-400 hover:bg-lime-300 transition-colors font-semibold"
-              >Blog</a
-            >
-            <div class="hidden sm:visible sm:flex items-center gap-3">
+          <div class="hidden sm:block">
+            <a class="block sm:flex items-center gap-3" href="./index.html">
               <img class="w-10" src="./assets/logo.png" alt="logo" />
-              <h3 class="text-xl font-bold">Donate Bangladesh</h3>
-            </div>
-            <div class="flex items-center gap-2">
-              <img src="./assets/coin.png" alt="coin_photo" />
-              <span class="text-lg">4500</span>
-              <span class="text-lg font-semibold">BDT</span>
-            </div>
+            <h3 class="text-xl font-bold">Donate Bangladesh</h3>
+            </a>
           </div>
-        </nav>
-        <div>
-          <div
-            class="flex items-center justify-center gap-4 w-11/12 mx-auto py-10"
-          >
-            <button
-              class="py-3 px-5 font-semibold rounded-lg border border-lime-400 bg-lime-400"
-            >
-              Donation
-            </button>
-            <button
-              class="py-3 px-5 font-semibold hover:bg-gray-300 transition-colors rounded-lg border border-lime-400"
-            >
-              History
-            </button>
+          <div class="flex items-center gap-2">
+            <img src="./assets/coin.png" alt="coin_photo" />
+            <span class="text-lg font-semibold">6500</span>
+            <span class="text-lg font-semibold">BDT</span>
           </div>
         </div>
-      </header>
+      </nav>
+      <div>
+        <div
+          class="flex items-center justify-center gap-4 w-11/12 mx-auto py-10"
+        >
+          <button
+            class="py-3 px-5 font-semibold rounded-lg border border-lime-400 bg-lime-400"
+          >
+            Donation
+          </button>
+          <button
+            class="py-3 px-5 font-semibold hover:bg-gray-300 transition-colors rounded-lg border border-lime-400"
+          >
+            History
+          </button>
+        </div>
+      </div>
+    </header>
 
-      <main>
-        <section>
-            <div class="w-11/12 lg:w-10/12 mx-auto">
-
+    <main>
+      <section>
+        <div class="w-11/12 lg:w-10/12 mx-auto space-y-4">
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+              <p>The Document Object Model (DOM) is a programming interface for web document. DOM is a tree-like structure of nodes and objects.DOM can do anything in an HTML Document like Access, Change, Delete or Add etc.</p>
             </div>
-        </section>
-      </main>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+              <p>To select element from the (DOM) Document Object Model in Javascript. If you target element specific to use <span class="font-semibold">getElementById()</span> or <span class="font-semibold">querySelector()</span> querySelector are using css selector class ID, class, tagName. Here are several methods :
+                <p>1. document.getElementById()</p>
+                <p>2. document.getElementBbIclassName()</p>
+                <p>3. document.getElementByIagName()</p>
+                <p>4. document.querySelector()</p>
+                <p>5. document.querySelectorAll()</p>
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+            <div class="collapse-content">
+              <p>Event Delegation is a pattern based concept of Event Bubbling. It's an event-handling pattern it's allows you to handle events at a higher level in the DOM tree. It's can efficient and can simplify event-handling.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+              <p>Manipulate an element's attributes and styles you can use methods like <span class="font-semibold">setAttribute()</span> to set attributes (disabled, autoplay) <span class="font-semibold">getElementById()</span> to target an element, <span class="font-semibold">add()</span> adding a class or <span class="font-semibold">remove()</span> to remove a class of the classList object. So you can manipulate element's by using Javascript.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-      <script src="./main.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>
