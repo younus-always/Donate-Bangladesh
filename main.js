@@ -25,7 +25,9 @@ targetId("donate-btn").addEventListener("click", function () {
   const div = document.createElement("div");
   div.className = "p-6 rounded-lg border";
   div.innerHTML = `
-    <h2 class="text-lg font-bold mb-2">${input} Taka is Donate for Flood at Noakhali, Bangladesh</h2>
+    <h2 class="text-lg font-bold mb-2">${input.toFixed(
+      2
+    )} Taka is Donate for Flood at Noakhali, Bangladesh</h2>
     <p class="">Date: ${new Date()}</p>
     `;
   parentDiv.insertBefore(div, parentDiv.firstChild);
@@ -52,7 +54,9 @@ targetId("donate-btn2").addEventListener("click", function () {
   const div = document.createElement("div");
   div.className = "p-6 rounded-lg border";
   div.innerHTML = `
-    <h2 class="text-lg font-bold mb-2">${input} Taka is Donate for Flood Relief in Feni, Bangladesh</h2>
+    <h2 class="text-lg font-bold mb-2">${input.toFixed(
+      2
+    )} Taka is Donate for Flood Relief in Feni, Bangladesh</h2>
     <p class="">Date: ${new Date()}</p>
     `;
   parentDiv.insertBefore(div, parentDiv.firstChild);
@@ -79,7 +83,9 @@ targetId("donate-btn3").addEventListener("click", function () {
   const div = document.createElement("div");
   div.className = "p-6 rounded-lg border";
   div.innerHTML = `
-    <h2 class="text-lg font-bold mb-2">${input} Taka is Donate for Aid for Injured in the Quoata Movement</h2>
+    <h2 class="text-lg font-bold mb-2">${input.toFixed(
+      2
+    )} Taka is Donate for Aid for Injured in the Quoata Movement</h2>
     <p class="">Date: ${new Date()}</p>
     `;
   parentDiv.insertBefore(div, parentDiv.firstChild);
